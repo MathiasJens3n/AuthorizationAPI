@@ -17,7 +17,7 @@ namespace AuthorizationAPI.Repositories
 
             MongoClient client = new MongoClient(_connString);
 
-            IMongoDatabase db = client.GetDatabase("Scrumboard");
+            IMongoDatabase db = client.GetDatabase("MyDB");
 
             userCollection = db.GetCollection<User>("Users");
         }
